@@ -54,6 +54,14 @@ input.error {
   border-color: red;
 }
 
+.category-card div:first-child{
+  margin-left: 0;
+}
+
+.category-card div:last-child{
+  margin-right: 0;
+}
+
 
 .input-feedback {
   color: red;

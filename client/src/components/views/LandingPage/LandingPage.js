@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import Axios from 'axios';
-import { Icon, Col, Card, Row } from 'antd';
-import ImageSlider from '../../utils/ImageSlider';
+import { Icon, Col, Card, Row, Button } from 'antd';
+import ImageSlider from '../../reusable/ImageSlider';
 import CheckBox from './Sections/CheckBox';
 import RadioBox from './Sections/RadioBox';
 import { continents, price } from './Sections/Datas';
 import SearchFeature from './Sections/SearchFeature';
-import AdvSlider from '../../utils/AdvSlider';
+import AdvSlider from '../../reusable/AdvSlider';
+import Category from '../../reusable/Category';
+import ParallaxFixed from '../../reusable/ParallaxFixed';
 
 const { Meta } = Card;
 
@@ -171,7 +173,12 @@ function LandingPage() {
 
 
             {/* Search  */}
-            <div style={{ display: 'flex', justifyContent: 'flex-end', margin: '0.5rem auto' }}>
+
+            <div style={{ display: 'flex', margin: '0.5rem auto' }}>
+
+                <h2 style={{marginRight:'675px'}}>
+                    Silahkan Cari Hasil Tani Anda
+                </h2>
 
                 <SearchFeature
                     refreshFunction={updateSearchTerms}
@@ -179,12 +186,17 @@ function LandingPage() {
 
             </div>
 
+            <Category />
+
 
             {Products.length === 0 ?
                 <div style={{ display: 'flex', height: '300px', justifyContent: 'center', alignItems: 'center' }}>
                     <h2>No post yet...</h2>
                 </div> :
                 <div>
+                    <h1>
+                        Produk Terbaru
+                    </h1>
                     <Row gutter={[16, 16]}>
 
                         {renderCards}
@@ -197,10 +209,15 @@ function LandingPage() {
             <br /><br />
 
             {PostSize >= Limit &&
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <button onClick={onLoadMore}>Load More</button>
+                <div style={{ display: 'flex', justifyContent: 'center', marginBottom:'50px'}}>
+                    <Button onClick={onLoadMore}>Load More</Button>
                 </div>
             }
+
+            <ParallaxFixed 
+                src='https://i.ibb.co/LDytFkd/nadine-primeau-b-Lk-T8w-GV0-I-unsplash.jpg'
+                name='DISKON 50 %'
+            />
 
 
         </div>

@@ -143,7 +143,7 @@ function RegisterPage(props) {
                   type="email"
                   value={values.email}
                   onChange={handleChange}
-                  // onBlur={handleBlur}
+                  onBlur={handleBlur}
                   className={
                     errors.email && touched.email ? 'text-input error' : 'text-input'
                   }
