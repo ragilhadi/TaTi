@@ -2,13 +2,15 @@ import React, { useEffect, useState } from 'react'
 import Axios from 'axios';
 import { Icon, Col, Card, Row, Button } from 'antd';
 import ImageSlider from '../../reusable/ImageSlider';
+import Slider from "react-slick";
 import CheckBox from './Sections/CheckBox';
 import RadioBox from './Sections/RadioBox';
-import { continents, price } from './Sections/Datas';
+import { category, price } from './Sections/Datas';
 import SearchFeature from './Sections/SearchFeature';
 import AdvSlider from '../../reusable/AdvSlider';
 import Category from '../../reusable/Category';
 import ParallaxFixed from '../../reusable/ParallaxFixed';
+import TittleSection from '../../reusable/TittleSection';
 
 const { Meta } = Card;
 
@@ -81,6 +83,20 @@ function LandingPage() {
             </Card>
         </Col>
     })
+    
+
+    // const render = Products.map((product, index) => {
+    //     return <Col lg={6} lg={6} md={8} xs={24}>
+    //         <Card
+    //             hoverable={true}
+    //             cover={<a href={`/product/${product._id}`} >
+    //             <img/> </a>}                          
+    //         >
+                
+
+    //         </Card>
+    //     </Col>
+    // })
 
 
     const showFilteredResults = (filters) => {
@@ -152,27 +168,6 @@ function LandingPage() {
             </div>
 
             <AdvSlider/>
-            
-
-            {/* Filter  */}
-
-            {/* <Row gutter={[16, 16]}>
-                <Col lg={12} xs={24} >
-                    <CheckBox
-                        list={continents}
-                        handleFilters={filters => handleFilters(filters, "continents")}
-                    />
-                </Col>
-                <Col lg={12} xs={24}>
-                    <RadioBox
-                        list={price}
-                        handleFilters={filters => handleFilters(filters, "price")}
-                    />
-                </Col>
-            </Row> */}
-
-
-            {/* Search  */}
 
             <div style={{ display: 'flex', margin: '0.5rem auto' }}>
 
@@ -186,6 +181,10 @@ function LandingPage() {
 
             </div>
 
+            <TittleSection
+                tittle='Category Produk'
+                subtittle='Beberapa Produk Utama yang dijual'/>
+
             <Category />
 
 
@@ -194,9 +193,9 @@ function LandingPage() {
                     <h2>No post yet...</h2>
                 </div> :
                 <div>
-                    <h1>
-                        Produk Terbaru
-                    </h1>
+                    <TittleSection
+                        tittle='Produk Terbaru'
+                        subtittle='jangan lewatkan beberapa produk terbaru berikut'/>
                     <Row gutter={[16, 16]}>
 
                         {renderCards}
@@ -216,7 +215,41 @@ function LandingPage() {
 
             <ParallaxFixed 
                 src='https://i.ibb.co/LDytFkd/nadine-primeau-b-Lk-T8w-GV0-I-unsplash.jpg'
-                name='DISKON 50 %'
+                tittle='Tujuan dari TaTi'
+                subtittle='TaTi Hadir untuk memudahkan para petani untuk menjual produknya'
+            />
+
+            <br/><br/>
+
+
+            <Row gutter={[16, 16]}>
+                <Col lg={12} xs={24} >
+                    <CheckBox
+                        list={category}
+                        handleFilters={filters => handleFilters(filters, "category")}
+                    />
+                </Col>
+                <Col lg={12} xs={24}>
+                    <RadioBox
+                        list={price}
+                        handleFilters={filters => handleFilters(filters, "price")}
+                    />
+                </Col>
+            </Row> 
+
+            <br/>
+            <Row gutter={[16, 16]}>
+
+            {renderCards}
+
+            </Row>
+
+            <br/>
+            <br/>
+            <ParallaxFixed 
+                src='https://i.ibb.co/LDytFkd/nadine-primeau-b-Lk-T8w-GV0-I-unsplash.jpg'
+                tittle='Tujuan dari TaTi'
+                subtittle='TaTi Hadir untuk memudahkan para petani untuk menjual produknya'
             />
 
 

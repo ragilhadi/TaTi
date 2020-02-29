@@ -63,6 +63,23 @@ input.error {
 }
 
 
+.text-center{
+  position: relative;
+float: left;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.text-center2{
+  position: relative;
+float: left;
+top: 60%;
+left: 35%;
+transform: translate(-50%, -50%);
+}
+
+
 .input-feedback {
   color: red;
   height: 5px;
