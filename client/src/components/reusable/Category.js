@@ -3,9 +3,9 @@ import {Col } from 'antd';
 
 
 const data = [
-    {id : 1, name: 'Buah', src:'https://i.ibb.co/LDytFkd/nadine-primeau-b-Lk-T8w-GV0-I-unsplash.jpg'},
-    {id : 2, name: 'Sayur', src:'https://i.ibb.co/9TR8wBh/nadine-primeau-ft-Wfohtj-Nw-unsplash.jpg'},
-    {id : 3, name: 'Rempah', src:'https://i.ibb.co/vjGGGgT/jo-sonn-ze-Fy-o-CUh-V8-unsplash.jpg'},
+    {id : 1, name: 'Buah', src:'https://i.ibb.co/z4s2bpf/sayur-2x.png'},
+    {id : 2, name: 'Sayur', src:'https://i.ibb.co/72N8LFz/Buah-2x.png'},
+    {id : 3, name: 'Rempah', src:'https://i.ibb.co/KLvhWjG/Rempah-2x.png'},
 ]
 
 function Category(){

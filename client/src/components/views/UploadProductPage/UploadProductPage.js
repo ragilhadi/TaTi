@@ -9,9 +9,7 @@ const { TextArea } = Input;
 const Category = [
     { key: 1, value: "Sayur" },
     { key: 2, value: "Buah" },
-    { key: 3, value: "Rempah" },
-    { key: 4, value: "Produk Jadi" },
-    { key: 5, value: "Lainnya" }    
+    { key: 3, value: "Rempah" }  
 ]
 
 const openNotificationWithIcon = type => {

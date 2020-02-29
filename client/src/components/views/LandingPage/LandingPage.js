@@ -214,7 +214,7 @@ function LandingPage() {
             }
 
             <ParallaxFixed 
-                src='https://i.ibb.co/LDytFkd/nadine-primeau-b-Lk-T8w-GV0-I-unsplash.jpg'
+                src='https://i.ibb.co/DQRrpKN/Group-1-2x.png'
                 tittle='Tujuan dari TaTi'
                 subtittle='TaTi Hadir untuk memudahkan para petani untuk menjual produknya'
             />
@@ -247,7 +247,7 @@ function LandingPage() {
             <br/>
             <br/>
             <ParallaxFixed 
-                src='https://i.ibb.co/LDytFkd/nadine-primeau-b-Lk-T8w-GV0-I-unsplash.jpg'
+                src='https://i.ibb.co/ncbFvW7/Group-2-2x.png'
                 tittle='Tujuan dari TaTi'
                 subtittle='TaTi Hadir untuk memudahkan para petani untuk menjual produknya'
             />
