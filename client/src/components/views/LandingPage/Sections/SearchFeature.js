@@ -15,11 +15,11 @@ function SearchFeature(props) {
     }
 
     return (
-        <div>
+        <div style={{marginTop:'2rem'}}>
             <Search
                 value={SearchTerms}
                 onChange={onChangeSearch}
-                placeholder="Search By Typing..."
+                placeholder="Cari Hasil Tani disini.."
             />
         </div>
     )

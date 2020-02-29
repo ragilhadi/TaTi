@@ -17,7 +17,7 @@ function Category(){
                 style={{backgroundImage: `url(${item.src})`,backgroundSize:'cover', 
                 height:'400px', margin:'5px 10px 20px', backgroundRepeat  : 'no-repeat',
                 backgroundPosition: 'center'}}>
-                    <h1 className='text-center'>
+                    <h1 className='text-center category-text'>
                         {item.name}
                     </h1>
                 </div>

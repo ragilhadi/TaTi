@@ -80,8 +80,7 @@ function LoginPage(props) {
         } = props;
         return (
           <div className="app">
-
-            <Title level={1}>TaTi</Title>
+            <img src='https://i.ibb.co/7Kfd7Gc/logo-sementara.png' style={{height:'150px'}}/>
             <Title level={2}>Log In</Title>
             <form onSubmit={handleSubmit} style={{ width: '350px' }}>
 

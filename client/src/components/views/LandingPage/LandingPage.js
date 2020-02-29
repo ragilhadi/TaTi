@@ -83,20 +83,7 @@ function LandingPage() {
             </Card>
         </Col>
     })
-    
 
-    // const render = Products.map((product, index) => {
-    //     return <Col lg={6} lg={6} md={8} xs={24}>
-    //         <Card
-    //             hoverable={true}
-    //             cover={<a href={`/product/${product._id}`} >
-    //             <img/> </a>}                          
-    //         >
-                
-
-    //         </Card>
-    //     </Col>
-    // })
 
 
     const showFilteredResults = (filters) => {
@@ -162,18 +149,21 @@ function LandingPage() {
 
     return (
         <div style={{ width: '75%', margin: '1rem auto 1rem' }}>
-            <div style={{ textAlign: 'center' }}>
-                <h1 style={{fontSize:'2rem'}}>   Selamat Datang di TaTi <Icon type="shop" />  </h1>
-                <h2>   Tempat Hasil Tani Terbaik </h2>
+            <div style={{ textAlign: 'center' }} className="top-tittle">
+                <h1 style={{fontSize:'3rem'}}>   Selamat Datang di TaTi </h1>
+                <h2> "Tempat Hasil Tani Terbaik" </h2>
             </div>
 
             <AdvSlider/>
 
-            <div style={{ display: 'flex', margin: '0.5rem auto' }}>
+            <TittleSection
+                tittle='Category Produk'
+                subtittle='Beberapa Produk Utama yang dijual'/>
 
-                <h2 style={{marginRight:'675px'}}>
-                    Silahkan Cari Hasil Tani Anda
-                </h2>
+            <Category />
+
+
+            <div style={{ display: 'block', margin: '2rem auto' }}>
 
                 <SearchFeature
                     refreshFunction={updateSearchTerms}
@@ -181,11 +171,6 @@ function LandingPage() {
 
             </div>
 
-            <TittleSection
-                tittle='Category Produk'
-                subtittle='Beberapa Produk Utama yang dijual'/>
-
-            <Category />
 
 
             {Products.length === 0 ?
@@ -215,7 +200,7 @@ function LandingPage() {
 
             <ParallaxFixed 
                 src='https://i.ibb.co/DQRrpKN/Group-1-2x.png'
-                tittle='Tujuan dari TaTi'
+                tittle='TaTi untuk Petani'
                 subtittle='TaTi Hadir untuk memudahkan para petani untuk menjual produknya'
             />
 
@@ -248,8 +233,8 @@ function LandingPage() {
             <br/>
             <ParallaxFixed 
                 src='https://i.ibb.co/ncbFvW7/Group-2-2x.png'
-                tittle='Tujuan dari TaTi'
-                subtittle='TaTi Hadir untuk memudahkan para petani untuk menjual produknya'
+                tittle='TaTi untuk Masyarakat'
+                subtittle='TaTi Hadir untuk memudahkan masyarakat untuk mencari hasil tani'
             />
 
 

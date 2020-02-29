@@ -102,7 +102,6 @@ function RegisterPage(props) {
             <Form style={{ minWidth: '375px' }} {...formItemLayout} onSubmit={handleSubmit} >
 
               <Form.Item required label="Name">
-                <br/>
                 <Input
                   id="name"
                   placeholder="Enter your name"

@@ -18,7 +18,7 @@ body {
 
 
 body {
-  font-family: 'Montserrat', ;
+  font-family: 'Montserrat' ;
   font-size: 14px;
   line-height: 1.5;
   color: #24292e;
@@ -35,7 +35,45 @@ body {
 
 .adv-slider{
   margin: 3rem auto;
-  
+}
+
+.parallax-text h1{
+  font-weight: 500;
+  color: white;
+  font-size: 2rem;
+}
+
+.parallax-text h2{
+  font-weight: 400;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.tittle-style h1{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.tittle-style h2{
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #5d5d5d;
+  margin-top: 5px;
+}
+
+
+.top-tittle h1{
+  margin-bottom: 5px;
+}
+
+.top-tittle h2{
+  font-size: 1.2rem;
+}
+
+.category-text{
+  font-weight: 600;
+  color: white;
+  font-size: 2rem;
 }
 
 .adv-slider .ant-carousel .slick-slide{
@@ -67,9 +105,8 @@ transform: translate(-50%, -50%);
 
 .text-center2{
   position: relative;
-float: left;
-top: 60%;
-left: 35%;
+top: 65%;
+left: 37%;
 transform: translate(-50%, -50%);
 }
 
